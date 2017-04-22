@@ -1,0 +1,4248 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://styled-components.com"
+
+    >styled-components (v1.4.5)</a>
+</h1>
+<h4>Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.styled-components">module styled-components</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.ThemeProvider">
+            function <span class="apidocSignatureSpan">styled-components.</span>ThemeProvider
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.css">
+            function <span class="apidocSignatureSpan">styled-components.</span>css
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default">
+            function <span class="apidocSignatureSpan">styled-components.</span>default
+            <span class="apidocSignatureSpan">(tag)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.injectGlobal">
+            function <span class="apidocSignatureSpan">styled-components.</span>injectGlobal
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.keyframes">
+            function <span class="apidocSignatureSpan">styled-components.</span>keyframes
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.withTheme">
+            function <span class="apidocSignatureSpan">styled-components.</span>withTheme
+            <span class="apidocSignatureSpan">(Component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">styled-components.</span>flatten</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.styled-components.ThemeProvider">module styled-components.ThemeProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.ThemeProvider.default">
+            function <span class="apidocSignatureSpan">styled-components.ThemeProvider.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">styled-components.ThemeProvider.</span>CHANNEL</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.styled-components.default">module styled-components.default</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.default">
+            function <span class="apidocSignatureSpan">styled-components.</span>default
+            <span class="apidocSignatureSpan">(tag)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.a">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>a
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.abbr">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>abbr
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.address">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>address
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.area">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>area
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.article">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>article
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.aside">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>aside
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.audio">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>audio
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.b">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>b
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.base">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>base
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.bdi">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>bdi
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.bdo">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>bdo
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.big">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>big
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.blockquote">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>blockquote
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.body">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>body
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.br">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>br
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.button">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>button
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.canvas">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>canvas
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.caption">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>caption
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.circle">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>circle
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.cite">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>cite
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.clipPath">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>clipPath
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.code">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>code
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.col">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>col
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.colgroup">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>colgroup
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.data">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>data
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.datalist">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>datalist
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.dd">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>dd
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.defs">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>defs
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.del">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>del
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.details">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>details
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.dfn">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>dfn
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.dialog">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>dialog
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.div">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>div
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.dl">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>dl
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.dt">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>dt
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.ellipse">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>ellipse
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.em">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>em
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.embed">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>embed
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.fieldset">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>fieldset
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.figcaption">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>figcaption
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.figure">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>figure
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.footer">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>footer
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.form">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>form
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.g">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>g
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.h1">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>h1
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.h2">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>h2
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.h3">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>h3
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.h4">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>h4
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.h5">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>h5
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.h6">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>h6
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.head">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>head
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.header">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>header
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.hgroup">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>hgroup
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.hr">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>hr
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.html">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>html
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.i">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>i
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.iframe">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>iframe
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.image">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>image
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.img">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>img
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.input">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>input
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.ins">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>ins
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.kbd">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>kbd
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.keygen">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>keygen
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.label">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>label
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.legend">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>legend
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.li">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>li
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.line">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>line
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.linearGradient">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>linearGradient
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.link">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>link
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.main">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>main
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.map">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>map
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.mark">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>mark
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.mask">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>mask
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.menu">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>menu
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.menuitem">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>menuitem
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.meta">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>meta
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.meter">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>meter
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.nav">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>nav
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.noscript">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>noscript
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.object">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>object
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.ol">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>ol
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.optgroup">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>optgroup
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.option">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>option
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.output">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>output
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.p">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>p
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.param">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>param
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.path">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>path
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.pattern">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>pattern
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.picture">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>picture
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.polygon">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>polygon
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.polyline">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>polyline
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.pre">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>pre
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.progress">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>progress
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.q">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>q
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.radialGradient">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>radialGradient
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.rect">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>rect
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.rp">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>rp
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.rt">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>rt
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.ruby">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>ruby
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.s">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>s
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.samp">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>samp
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.script">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>script
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.section">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>section
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.select">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>select
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.small">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>small
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.source">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>source
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.span">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>span
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.stop">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>stop
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.strong">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>strong
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.style">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>style
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.sub">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>sub
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.summary">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>summary
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.sup">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>sup
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.svg">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>svg
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.table">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>table
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.tbody">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>tbody
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.td">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>td
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.text">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>text
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.textarea">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>textarea
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.tfoot">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>tfoot
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.th">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>th
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.thead">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>thead
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.time">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>time
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.title">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>title
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.tr">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>tr
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.track">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>track
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.tspan">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>tspan
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.u">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>u
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.ul">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>ul
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.var">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>var
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.video">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>video
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.default.wbr">
+            function <span class="apidocSignatureSpan">styled-components.default.</span>wbr
+            <span class="apidocSignatureSpan">(strings)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.styled-components.flatten">module styled-components.flatten</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.flatten.default">
+            function <span class="apidocSignatureSpan">styled-components.flatten.</span>default
+            <span class="apidocSignatureSpan">(chunks, executionContext)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.styled-components.flatten.objToCss">
+            function <span class="apidocSignatureSpan">styled-components.flatten.</span>objToCss
+            <span class="apidocSignatureSpan">(obj, prevKey)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.styled-components" id="apidoc.module.styled-components">module styled-components</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.ThemeProvider" id="apidoc.element.styled-components.ThemeProvider">
+        function <span class="apidocSignatureSpan">styled-components.</span>ThemeProvider
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ThemeProvider() {
+  _classCallCheck(this, ThemeProvider);
+
+  var _this = _possibleConstructorReturn(this, (ThemeProvider.__proto__ || Object.getPrototypeOf(ThemeProvider)).call(this));
+
+  _this.getTheme = _this.getTheme.bind(_this);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.css" id="apidoc.element.styled-components.css">
+        function <span class="apidocSignatureSpan">styled-components.</span>css
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">css = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return (0, _flatten2.default)((0, _interleave2.default)(strings, interpolations));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default" id="apidoc.element.styled-components.default">
+        function <span class="apidocSignatureSpan">styled-components.</span>default
+        <span class="apidocSignatureSpan">(tag)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function styled(tag) {
+  return function (strings) {
+    for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+      interpolations[_key - 1] = arguments[_key];
+    }
+
+    return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var babelPluginFlowReactPropTypes_proptype_Interpolation = require(&#x27;../types&#x27;).babelPluginFlowReactPropTypes_proptype_Interpolation
+ || require(&#x27;react&#x27;).PropTypes.any;
+
+var injectGlobal = function injectGlobal(strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  var globalStyle = new _GlobalStyle2.<span class="apidocCodeKeywordSpan">default</span>(_css2.default.apply(undefined, [strings
+].concat(interpolations)));
+  globalStyle.generateAndInject();
+};
+
+exports.default = injectGlobal;
+module.exports = exports[&#x27;default&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.injectGlobal" id="apidoc.element.styled-components.injectGlobal">
+        function <span class="apidocSignatureSpan">styled-components.</span>injectGlobal
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function injectGlobal(strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  var globalStyle = new _GlobalStyle2.default(_css2.default.apply(undefined, [strings].concat(interpolations)));
+  globalStyle.generateAndInject();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.keyframes" id="apidoc.element.styled-components.keyframes">
+        function <span class="apidocSignatureSpan">styled-components.</span>keyframes
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyframes = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  var rules = _css2.default.apply(undefined, [strings].concat(interpolations));
+  var hash = (0, _hash2.default)(replaceWhitespace(JSON.stringify(rules)));
+  var name = nameGenerator(hash);
+  var keyframes = new _GlobalStyle2.default(rules, &#x27;@keyframes &#x27; + name);
+  keyframes.generateAndInject();
+  return name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.withTheme" id="apidoc.element.styled-components.withTheme">
+        function <span class="apidocSignatureSpan">styled-components.</span>withTheme
+        <span class="apidocSignatureSpan">(Component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">withTheme = function (Component) {
+  var _class, _temp2;
+
+  return _temp2 = _class = function (_React$Component) {
+    _inherits(_class, _React$Component);
+
+    function _class() {
+      var _ref;
+
+      var _temp, _this, _ret;
+
+      _classCallCheck(this, _class);
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _class.__proto__ || Object.getPrototypeOf(_class)).
+call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(_class, [{
+      key: &#x27;componentWillMount&#x27;,
+      value: function componentWillMount() {
+        var _this2 = this;
+
+        if (!this.context[_ThemeProvider.CHANNEL]) {
+          throw new Error(&#x27;[withTheme] Please use ThemeProvider to be able to use withTheme&#x27;);
+        }
+
+        var subscribe = this.context[_ThemeProvider.CHANNEL];
+        this.unsubscribe = subscribe(function (theme) {
+          _this2.setState({ theme: theme });
+        });
+      }
+    }, {
+      key: &#x27;componentWillUnmount&#x27;,
+      value: function componentWillUnmount() {
+        if (typeof this.unsubscribe === &#x27;function&#x27;) this.unsubscribe();
+      }
+    }, {
+      key: &#x27;render&#x27;,
+      value: function render() {
+        var theme = this.state.theme;
+
+
+        return _react2.default.createElement(Component, _extends({ theme: theme }, this.props));
+      }
+    }]);
+
+    return _class;
+  }(_react2.default.Component), _class.contextTypes = _defineProperty({}, _ThemeProvider.CHANNEL, _propTypes2.default.func), _temp2
+;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.styled-components.ThemeProvider" id="apidoc.module.styled-components.ThemeProvider">module styled-components.ThemeProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.ThemeProvider.default" id="apidoc.element.styled-components.ThemeProvider.default">
+        function <span class="apidocSignatureSpan">styled-components.ThemeProvider.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ThemeProvider() {
+  _classCallCheck(this, ThemeProvider);
+
+  var _this = _possibleConstructorReturn(this, (ThemeProvider.__proto__ || Object.getPrototypeOf(ThemeProvider)).call(this));
+
+  _this.getTheme = _this.getTheme.bind(_this);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var babelPluginFlowReactPropTypes_proptype_Interpolation = require(&#x27;../types&#x27;).babelPluginFlowReactPropTypes_proptype_Interpolation
+ || require(&#x27;react&#x27;).PropTypes.any;
+
+var injectGlobal = function injectGlobal(strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  var globalStyle = new _GlobalStyle2.<span class="apidocCodeKeywordSpan">default</span>(_css2.default.apply(undefined, [strings
+].concat(interpolations)));
+  globalStyle.generateAndInject();
+};
+
+exports.default = injectGlobal;
+module.exports = exports[&#x27;default&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.styled-components.default" id="apidoc.module.styled-components.default">module styled-components.default</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.default" id="apidoc.element.styled-components.default.default">
+        function <span class="apidocSignatureSpan">styled-components.</span>default
+        <span class="apidocSignatureSpan">(tag)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function styled(tag) {
+  return function (strings) {
+    for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+      interpolations[_key - 1] = arguments[_key];
+    }
+
+    return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var babelPluginFlowReactPropTypes_proptype_Interpolation = require(&#x27;../types&#x27;).babelPluginFlowReactPropTypes_proptype_Interpolation
+ || require(&#x27;react&#x27;).PropTypes.any;
+
+var injectGlobal = function injectGlobal(strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  var globalStyle = new _GlobalStyle2.<span class="apidocCodeKeywordSpan">default</span>(_css2.default.apply(undefined, [strings
+].concat(interpolations)));
+  globalStyle.generateAndInject();
+};
+
+exports.default = injectGlobal;
+module.exports = exports[&#x27;default&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.a" id="apidoc.element.styled-components.default.a">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>a
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">a = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.abbr" id="apidoc.element.styled-components.default.abbr">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>abbr
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">abbr = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.address" id="apidoc.element.styled-components.default.address">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>address
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">address = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.area" id="apidoc.element.styled-components.default.area">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>area
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">area = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.article" id="apidoc.element.styled-components.default.article">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>article
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">article = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.aside" id="apidoc.element.styled-components.default.aside">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>aside
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">aside = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.audio" id="apidoc.element.styled-components.default.audio">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>audio
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">audio = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.b" id="apidoc.element.styled-components.default.b">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>b
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">b = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.base" id="apidoc.element.styled-components.default.base">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>base
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">base = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.bdi" id="apidoc.element.styled-components.default.bdi">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>bdi
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bdi = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.bdo" id="apidoc.element.styled-components.default.bdo">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>bdo
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bdo = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.big" id="apidoc.element.styled-components.default.big">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>big
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">big = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.blockquote" id="apidoc.element.styled-components.default.blockquote">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>blockquote
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blockquote = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.body" id="apidoc.element.styled-components.default.body">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>body
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">body = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.br" id="apidoc.element.styled-components.default.br">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>br
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">br = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.button" id="apidoc.element.styled-components.default.button">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>button
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">button = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.canvas" id="apidoc.element.styled-components.default.canvas">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>canvas
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">canvas = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.caption" id="apidoc.element.styled-components.default.caption">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>caption
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">caption = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.circle" id="apidoc.element.styled-components.default.circle">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>circle
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">circle = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.cite" id="apidoc.element.styled-components.default.cite">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>cite
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cite = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.clipPath" id="apidoc.element.styled-components.default.clipPath">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>clipPath
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clipPath = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.code" id="apidoc.element.styled-components.default.code">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>code
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">code = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.col" id="apidoc.element.styled-components.default.col">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>col
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">col = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.colgroup" id="apidoc.element.styled-components.default.colgroup">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>colgroup
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">colgroup = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.data" id="apidoc.element.styled-components.default.data">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>data
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">data = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.datalist" id="apidoc.element.styled-components.default.datalist">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>datalist
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">datalist = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.dd" id="apidoc.element.styled-components.default.dd">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>dd
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dd = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.defs" id="apidoc.element.styled-components.default.defs">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>defs
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defs = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.del" id="apidoc.element.styled-components.default.del">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>del
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.details" id="apidoc.element.styled-components.default.details">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>details
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">details = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.dfn" id="apidoc.element.styled-components.default.dfn">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>dfn
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dfn = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.dialog" id="apidoc.element.styled-components.default.dialog">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>dialog
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dialog = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.div" id="apidoc.element.styled-components.default.div">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>div
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">div = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.dl" id="apidoc.element.styled-components.default.dl">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>dl
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dl = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.dt" id="apidoc.element.styled-components.default.dt">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>dt
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dt = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.ellipse" id="apidoc.element.styled-components.default.ellipse">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>ellipse
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ellipse = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.em" id="apidoc.element.styled-components.default.em">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>em
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">em = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.embed" id="apidoc.element.styled-components.default.embed">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>embed
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">embed = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.fieldset" id="apidoc.element.styled-components.default.fieldset">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>fieldset
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fieldset = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.figcaption" id="apidoc.element.styled-components.default.figcaption">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>figcaption
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">figcaption = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.figure" id="apidoc.element.styled-components.default.figure">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>figure
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">figure = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.footer" id="apidoc.element.styled-components.default.footer">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>footer
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footer = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.form" id="apidoc.element.styled-components.default.form">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>form
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">form = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.g" id="apidoc.element.styled-components.default.g">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>g
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">g = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.h1" id="apidoc.element.styled-components.default.h1">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>h1
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h1 = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.h2" id="apidoc.element.styled-components.default.h2">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>h2
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h2 = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.h3" id="apidoc.element.styled-components.default.h3">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>h3
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h3 = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.h4" id="apidoc.element.styled-components.default.h4">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>h4
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h4 = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.h5" id="apidoc.element.styled-components.default.h5">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>h5
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h5 = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.h6" id="apidoc.element.styled-components.default.h6">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>h6
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h6 = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.head" id="apidoc.element.styled-components.default.head">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>head
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">head = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.header" id="apidoc.element.styled-components.default.header">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>header
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">header = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.hgroup" id="apidoc.element.styled-components.default.hgroup">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>hgroup
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hgroup = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.hr" id="apidoc.element.styled-components.default.hr">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>hr
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hr = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.html" id="apidoc.element.styled-components.default.html">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>html
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">html = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.i" id="apidoc.element.styled-components.default.i">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>i
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.iframe" id="apidoc.element.styled-components.default.iframe">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>iframe
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">iframe = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.image" id="apidoc.element.styled-components.default.image">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>image
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">image = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.img" id="apidoc.element.styled-components.default.img">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>img
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">img = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.input" id="apidoc.element.styled-components.default.input">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>input
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">input = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.ins" id="apidoc.element.styled-components.default.ins">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>ins
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ins = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.kbd" id="apidoc.element.styled-components.default.kbd">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>kbd
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">kbd = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.keygen" id="apidoc.element.styled-components.default.keygen">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>keygen
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keygen = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.label" id="apidoc.element.styled-components.default.label">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>label
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">label = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.legend" id="apidoc.element.styled-components.default.legend">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>legend
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">legend = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.li" id="apidoc.element.styled-components.default.li">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>li
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">li = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.line" id="apidoc.element.styled-components.default.line">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>line
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">line = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.linearGradient" id="apidoc.element.styled-components.default.linearGradient">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>linearGradient
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">linearGradient = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.link" id="apidoc.element.styled-components.default.link">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>link
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">link = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.main" id="apidoc.element.styled-components.default.main">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>main
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">main = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.map" id="apidoc.element.styled-components.default.map">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>map
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i &#x3c; arr.length; i++) {
+arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+var babelPluginFlowReactPropTypes_proptype_Interpolation = require(&#x27;../types&#x27;).babelPluginFlowReactPropTypes_proptype_Interpolation
+ || require(&#x27;react&#x27;).PropTypes.any;
+
+var objToCss = exports.objToCss = function objToCss(obj, prevKey) {
+  var css = Object.keys(obj).<span class="apidocCodeKeywordSpan">map</span>(function (key) {
+    if ((0, _isPlainObject2.default)(obj[key])) return objToCss(obj[key], key);
+    return (0, _hyphenateStyleName2.default)(key) + &#x27;: &#x27; + obj[key] + &#x27;;&#x27;;
+  }).join(&#x27; &#x27;);
+  return prevKey ? prevKey + &#x27; {\n  &#x27; + css + &#x27;\n}&#x27; : css;
+};
+
+var flatten = function flatten(chunks, executionContext) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.mark" id="apidoc.element.styled-components.default.mark">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>mark
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mark = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.mask" id="apidoc.element.styled-components.default.mask">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>mask
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mask = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.menu" id="apidoc.element.styled-components.default.menu">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>menu
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">menu = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.menuitem" id="apidoc.element.styled-components.default.menuitem">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>menuitem
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">menuitem = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.meta" id="apidoc.element.styled-components.default.meta">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>meta
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">meta = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.meter" id="apidoc.element.styled-components.default.meter">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>meter
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">meter = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.nav" id="apidoc.element.styled-components.default.nav">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>nav
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nav = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.noscript" id="apidoc.element.styled-components.default.noscript">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>noscript
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noscript = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.object" id="apidoc.element.styled-components.default.object">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>object
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">object = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.ol" id="apidoc.element.styled-components.default.ol">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>ol
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ol = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.optgroup" id="apidoc.element.styled-components.default.optgroup">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>optgroup
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optgroup = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.option" id="apidoc.element.styled-components.default.option">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>option
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">option = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.output" id="apidoc.element.styled-components.default.output">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>output
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">output = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.p" id="apidoc.element.styled-components.default.p">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>p
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">p = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.param" id="apidoc.element.styled-components.default.param">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>param
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">param = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.path" id="apidoc.element.styled-components.default.path">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>path
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.pattern" id="apidoc.element.styled-components.default.pattern">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>pattern
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pattern = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.picture" id="apidoc.element.styled-components.default.picture">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>picture
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">picture = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.polygon" id="apidoc.element.styled-components.default.polygon">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>polygon
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">polygon = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.polyline" id="apidoc.element.styled-components.default.polyline">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>polyline
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">polyline = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.pre" id="apidoc.element.styled-components.default.pre">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>pre
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pre = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.progress" id="apidoc.element.styled-components.default.progress">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>progress
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">progress = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.q" id="apidoc.element.styled-components.default.q">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>q
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">q = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.radialGradient" id="apidoc.element.styled-components.default.radialGradient">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>radialGradient
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">radialGradient = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.rect" id="apidoc.element.styled-components.default.rect">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>rect
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rect = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.rp" id="apidoc.element.styled-components.default.rp">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>rp
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rp = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.rt" id="apidoc.element.styled-components.default.rt">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>rt
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rt = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.ruby" id="apidoc.element.styled-components.default.ruby">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>ruby
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ruby = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.s" id="apidoc.element.styled-components.default.s">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>s
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">s = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.samp" id="apidoc.element.styled-components.default.samp">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>samp
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">samp = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.script" id="apidoc.element.styled-components.default.script">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>script
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">script = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.section" id="apidoc.element.styled-components.default.section">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>section
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">section = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.select" id="apidoc.element.styled-components.default.select">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>select
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">select = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.small" id="apidoc.element.styled-components.default.small">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>small
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">small = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.source" id="apidoc.element.styled-components.default.source">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>source
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">source = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.span" id="apidoc.element.styled-components.default.span">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>span
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">span = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.stop" id="apidoc.element.styled-components.default.stop">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>stop
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.strong" id="apidoc.element.styled-components.default.strong">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>strong
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">strong = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.style" id="apidoc.element.styled-components.default.style">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>style
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.sub" id="apidoc.element.styled-components.default.sub">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>sub
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sub = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.summary" id="apidoc.element.styled-components.default.summary">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>summary
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">summary = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.sup" id="apidoc.element.styled-components.default.sup">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>sup
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sup = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.svg" id="apidoc.element.styled-components.default.svg">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>svg
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">svg = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.table" id="apidoc.element.styled-components.default.table">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>table
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">table = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.tbody" id="apidoc.element.styled-components.default.tbody">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>tbody
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tbody = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.td" id="apidoc.element.styled-components.default.td">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>td
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">td = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.text" id="apidoc.element.styled-components.default.text">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>text
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">text = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.textarea" id="apidoc.element.styled-components.default.textarea">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>textarea
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">textarea = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.tfoot" id="apidoc.element.styled-components.default.tfoot">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>tfoot
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tfoot = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.th" id="apidoc.element.styled-components.default.th">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>th
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">th = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.thead" id="apidoc.element.styled-components.default.thead">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>thead
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">thead = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.time" id="apidoc.element.styled-components.default.time">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>time
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">time = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.title" id="apidoc.element.styled-components.default.title">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>title
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">title = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.tr" id="apidoc.element.styled-components.default.tr">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>tr
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tr = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.track" id="apidoc.element.styled-components.default.track">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>track
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">track = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.tspan" id="apidoc.element.styled-components.default.tspan">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>tspan
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tspan = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.u" id="apidoc.element.styled-components.default.u">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>u
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">u = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.ul" id="apidoc.element.styled-components.default.ul">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>ul
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ul = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.var" id="apidoc.element.styled-components.default.var">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>var
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">var = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.video" id="apidoc.element.styled-components.default.video">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>video
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">video = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.default.wbr" id="apidoc.element.styled-components.default.wbr">
+        function <span class="apidocSignatureSpan">styled-components.default.</span>wbr
+        <span class="apidocSignatureSpan">(strings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">wbr = function (strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  return styledComponent(tag, _css2.default.apply(undefined, [strings].concat(interpolations)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.styled-components.flatten" id="apidoc.module.styled-components.flatten">module styled-components.flatten</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.flatten.default" id="apidoc.element.styled-components.flatten.default">
+        function <span class="apidocSignatureSpan">styled-components.flatten.</span>default
+        <span class="apidocSignatureSpan">(chunks, executionContext)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flatten(chunks, executionContext) {
+  return chunks.reduce(function (ruleSet, chunk) {
+<span class="apidocCodeCommentSpan">    /* Remove falsey values */
+</span>    if (chunk === undefined || chunk === null || chunk === false || chunk === &#x27;&#x27;) return ruleSet;
+    /* Flatten ruleSet */
+    if (Array.isArray(chunk)) return [].concat(_toConsumableArray(ruleSet), _toConsumableArray(flatten(chunk, executionContext)));
+    /* Either execute or defer the function */
+    if (typeof chunk === &#x27;function&#x27;) {
+      return executionContext ? ruleSet.concat.apply(ruleSet, _toConsumableArray(flatten([chunk(executionContext)], executionContext
+))) : ruleSet.concat(chunk);
+    }
+
+    /* Handle objects */
+    // $FlowFixMe have to add %checks somehow to isPlainObject
+    return ruleSet.concat((0, _isPlainObject2.default)(chunk) ? objToCss(chunk) : chunk.toString());
+  }, []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var babelPluginFlowReactPropTypes_proptype_Interpolation = require(&#x27;../types&#x27;).babelPluginFlowReactPropTypes_proptype_Interpolation
+ || require(&#x27;react&#x27;).PropTypes.any;
+
+var injectGlobal = function injectGlobal(strings) {
+  for (var _len = arguments.length, interpolations = Array(_len &#x3e; 1 ? _len - 1 : 0), _key = 1; _key &#x3c; _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  var globalStyle = new _GlobalStyle2.<span class="apidocCodeKeywordSpan">default</span>(_css2.default.apply(undefined, [strings
+].concat(interpolations)));
+  globalStyle.generateAndInject();
+};
+
+exports.default = injectGlobal;
+module.exports = exports[&#x27;default&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.styled-components.flatten.objToCss" id="apidoc.element.styled-components.flatten.objToCss">
+        function <span class="apidocSignatureSpan">styled-components.flatten.</span>objToCss
+        <span class="apidocSignatureSpan">(obj, prevKey)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function objToCss(obj, prevKey) {
+  var css = Object.keys(obj).map(function (key) {
+    if ((0, _isPlainObject2.default)(obj[key])) return objToCss(obj[key], key);
+    return (0, _hyphenateStyleName2.default)(key) + &#x27;: &#x27; + obj[key] + &#x27;;&#x27;;
+  }).join(&#x27; &#x27;);
+  return prevKey ? prevKey + &#x27; {\n  &#x27; + css + &#x27;\n}&#x27; : css;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
